@@ -1,1 +1,1 @@
-# Simple-Convolutional-Neural-Network
+# Simple Convolutional Neural Network for Pattern Recognition
