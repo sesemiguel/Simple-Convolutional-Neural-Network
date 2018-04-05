@@ -91,6 +91,9 @@ def pd_3darray_to_csv(input_array, filename_output):
 #		   INITIALIZATION   		 #
 ##################################################
 
+# Input file
+filename = ""
+
 # Number of decimal places
 np.set_printoptions(precision=4)
 
@@ -117,7 +120,7 @@ max_FC_weights = np.zeros((12,4))
 min_FC_weights = np.zeros((12,4))
 
 # Input for convolution array
-input_img = np.invert(np.array(Image.open("sabog.png").convert("L")))/255
+input_img = np.invert(np.array(Image.open(filename).convert("L")))/255
 print("INPUT BINARY ARRAY")
 print(input_img)
 
