@@ -1,5 +1,5 @@
 ##################################################
-#				     IMPORTS    			     #
+#		      IMPORTS    		 #
 ##################################################
 import numpy as np
 from scipy import signal
@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 ##################################################
-#				    FUNCTIONS    			     #
+#		     FUNCTIONS    		 #
 ##################################################
 
 # Generating new random values for the weights
@@ -88,7 +88,7 @@ def pd_3darray_to_csv(input_array, filename_output):
 	stacked.to_csv(filename_output, index=False)
 
 ##################################################
-#				 INITIALIZATION   			     #
+#		   INITIALIZATION   		 #
 ##################################################
 
 # Number of decimal places
@@ -145,7 +145,7 @@ for x in range(0,iteration):
 	print("ITERATION: ", x)
 
 ####################################################
-#                   FORWARD PASS         	       #
+#                   FORWARD PASS         	   #
 ####################################################
 
 	# Convolution
@@ -166,7 +166,7 @@ for x in range(0,iteration):
 	softmax_output = softmax(output_nodes_flat_column)
 
 ####################################################
-#                  BACKPROPAGATION       	       #
+#                  BACKPROPAGATION       	   #
 ####################################################
 
 	# Error calculation
@@ -213,7 +213,7 @@ for x in range(0,iteration):
 		input_filter[x] = signal.convolve(input_img, convolved_nodes[x], mode="valid")
 
 ####################################################
-#                  	 	OUTPUTS       		       #
+#                      OUTPUTS       		   #
 ####################################################
 
 #  Printing and writing to CSV of the final/maximum/minimum filter weights and FC weights respectively
