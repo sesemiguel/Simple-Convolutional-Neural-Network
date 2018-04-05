@@ -10,7 +10,7 @@
 - Final FC weights in CSV
 
 ### Architecture
-![images/Architecture](Architecture.png)
+![Architecture](images/Architecture.png)
 
 
 
