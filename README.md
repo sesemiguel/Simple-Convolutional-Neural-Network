@@ -12,7 +12,7 @@
 ### Architecture
 ![Architecture](images/Architecture.png)
 
-
+###### See IEEE document for more information
 
 ### Contributors
 CHAN, Zion Eric O.
